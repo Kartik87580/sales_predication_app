@@ -41,7 +41,6 @@ ad_click_prediction/
 ├── advertising.csv             # Dataset
 ├── ad_click_prediction.ipynb   # Model training and EDA
 ├── app.py                      # Streamlit application
-├── model.pkl                   # Trained ML model (optional)
 ├── README.md                   # Documentation
 └── requirements.txt            # Python dependencies
 ```
