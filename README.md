@@ -39,7 +39,7 @@ A machine learning web app that predicts whether a user will **click on an adver
 ad_click_prediction/
 │
 ├── advertising.csv             # Dataset
-├── ad_click_prediction.ipynb   # Model training and EDA
+├── Sales prediction.ipynb   # Model training and EDA
 ├── app.py                      # Streamlit application
 ├── README.md                   # Documentation
 └── requirements.txt            # Python dependencies
