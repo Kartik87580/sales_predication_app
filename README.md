@@ -1,59 +1,75 @@
-# 📢 Advertisement Click Prediction using Machine Learning
 
-A machine learning web app that predicts whether a user will **click on an advertisement** or not, based on features like **age**, **daily internet usage**, **timestamp**, etc. Built using **Streamlit**, **Pandas**, and **Scikit-learn**.
+# 📊 Sales Prediction 
+
+An interactive machine learning dashboard built with **Streamlit** to predict **product sales** based on advertising budget allocation across TV, Radio, and Newspaper. It also provides visual analysis and performance metrics using **Linear Regression**.
 
 ---
 
-## 📊 Features Used
+## 🚀 Features
 
-* Daily Time Spent on Site
-* Age
-* Area Income
-* Daily Internet Usage
-* Timestamp (can be processed into hour/day)
-* Gender (if included)
-* Clicked on Ad (Target)
+* Predict **sales output** based on TV, Radio, and Newspaper spending
+* Explore **correlation heatmap** between features
+* View **model performance** (R² score & MSE)
+* Interactive sliders for user input
+* Clean, responsive web interface using Streamlit
 
 ---
 
 ## 🧠 Tech Stack
 
 * **Python**
-* **Pandas & NumPy** – for data analysis
-* **Scikit-learn** – for ML models and preprocessing
-* **Matplotlib & Seaborn** – for visualization (if included)
-* **Streamlit** – for deploying interactive web app
-
----
-
-## 🧪 ML Model
-
-* **Logistic Regression** or any suitable classification model
-* Target variable: `Clicked on Ad` (0 = No, 1 = Yes)
+* **Streamlit** – for dashboard UI
+* **Pandas** – for data manipulation
+* **Seaborn & Matplotlib** – for data visualization
+* **Scikit-learn** – for machine learning and evaluation
 
 ---
 
 ## 📂 Project Structure
 
 ```
-ad_click_prediction/
+sales_prediction/
 │
-├── advertising.csv             # Dataset
-├── Sales prediction.ipynb   # Model training and EDA
-├── app.py                      # Streamlit application
-├── README.md                   # Documentation
-└── requirements.txt            # Python dependencies
+├── advertising.csv          # Dataset
+├── app.py                   # Streamlit app
+├── README.md                # Project documentation
+└── requirements.txt         # Python dependencies
 ```
 
 ---
 
-## 🚀 How to Run
+## 📈 Dataset
 
-1. **Clone the repo**:
+* Dataset: `advertising.csv`
+* Features:
+
+  * `TV` – Advertising budget spent on TV
+  * `Radio` – Budget spent on radio
+  * `Newspaper` – Budget spent on newspaper
+* Target:
+
+  * `Sales` – Number of product units sold
+
+---
+
+## 📊 Model Details
+
+* **Algorithm**: Linear Regression
+* **Evaluation Metrics**:
+
+  * R² Score
+  * Mean Squared Error (MSE)
+* Train-test split: 80-20%
+
+---
+
+## 🖥️ How to Run the App
+
+1. **Clone the repository**:
 
    ```bash
-   git clone https://github.com/yourusername/ad_click_prediction.git
-   cd ad_click_prediction
+   git clone https://github.com/yourusername/sales_prediction.git
+   cd sales_prediction
    ```
 
 2. **Install dependencies**:
@@ -62,21 +78,13 @@ ad_click_prediction/
    pip install -r requirements.txt
    ```
 
-3. **Launch the app**:
+3. **Run the Streamlit app**:
 
    ```bash
    streamlit run app.py
    ```
 
 ---
-
-## 🧠 Model Workflow
-
-1. Data loaded and preprocessed
-2. Features selected and target encoded
-3. Trained using classification algorithm
-4. User input taken via Streamlit UI
-5. Model predicts probability of clicking the ad
 
 
 
@@ -85,4 +93,5 @@ ad_click_prediction/
 This project is licensed under the [MIT License](LICENSE).
 
 ---
+
 
